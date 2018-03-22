@@ -2,6 +2,8 @@
 
 The solution on ***[this](https://nodesource.com/products/nsolid)***
 
+Adds query object to router reducer when using react-router v4 or higher
+
 ### Installation
 
 ```sh
