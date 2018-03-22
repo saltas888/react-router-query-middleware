@@ -16,6 +16,10 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
+  "repository" :{ 
+    "type" : "git",
+    "url" : "https://github.com/saltas888/react-router-query-middleware"
+  },
   "author": {
     "url": "https://github.com/saltas888/react-router-query-middleware",
     "name": "Dimitrios Saltaferis",
