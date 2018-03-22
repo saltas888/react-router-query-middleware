@@ -17,6 +17,7 @@
     "build": "webpack"
   },
   "author": {
+    "url" : "https://github.com/saltas888/react-router-query-middleware",
     "name": "Dimitrios Saltaferis",
     "email": "d.saltaferis@gmail.com"
   },
