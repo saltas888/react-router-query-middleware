@@ -1,6 +1,6 @@
 # react-router-query-middleware
 
-The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
+The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410){:target="_blank"}***
 
 Adds query object to router reducer when using react-router v4 or higher
 
