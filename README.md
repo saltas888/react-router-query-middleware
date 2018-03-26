@@ -1,6 +1,7 @@
 # react-router-query-middleware
 
-![npm](http://img.shields.io/npm/dw/react-router-query-middleware.svg)
+
+[![npm](https://img.shields.io/npm/dw/localeval.svg?style=flat-square)](https://www.npmjs.com/package/react-router-query-middleware)
 
 The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
 
