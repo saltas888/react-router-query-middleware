@@ -1,6 +1,6 @@
 # react-router-query-middleware
 
-![npm](https://img.shields.io/npm/dw/react-router-query-middleware.svg)
+![npm](http://img.shields.io/npm/dw/react-router-query-middleware.svg)
 
 The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
 
