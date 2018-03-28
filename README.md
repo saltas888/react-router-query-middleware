@@ -1,6 +1,7 @@
 # react-router-query-middleware
 
 [![Download Count](http://img.shields.io/npm/dm/react-router-query-middleware.svg?style=flat-square)](https://npmjs.org/package/react-router-query-middleware)
+[![npm version](https://badge.fury.io/js/react-router-query-middleware.svg)](https://badge.fury.io/js/react-router-query-middleware)
 
 The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
 
