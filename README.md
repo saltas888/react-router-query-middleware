@@ -1,5 +1,7 @@
 # react-router-query-middleware
 
+[![Download Count](http://img.shields.io/npm/dm/react-router-query-middleware.svg?style=flat-square)](https://npmjs.org/package/react-router-query-middleware)
+
 The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
 
 Adds query object to router reducer when using react-router v4 or higher
