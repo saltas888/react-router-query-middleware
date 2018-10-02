@@ -7,6 +7,8 @@
     "react": "^15.5.4"
   },
   "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
     "query-string": "^6.0.0",
     "react": "^15.5.4",
     "webpack": "^2.6.1"
