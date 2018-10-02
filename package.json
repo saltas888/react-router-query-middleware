@@ -1,6 +1,6 @@
 {
   "name": "react-router-query-middleware",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This middleware adds query object to router reducer when using react-router v4 or higher",
   "main": "build/index.js",
   "peerDependencies": {
