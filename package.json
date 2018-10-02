@@ -4,7 +4,7 @@
   "description": "This middleware adds query object to router reducer when using react-router v4 or higher",
   "main": "build/index.js",
   "peerDependencies": {
-    "react": "^15.5.4"
+    "react": "*"
   },
   "dependencies": {
     "lodash.get": "^4.4.2",
