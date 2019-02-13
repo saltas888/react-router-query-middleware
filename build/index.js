@@ -2282,6 +2282,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = queryMiddleware;
 
+var _queryString = __webpack_require__(3);
+
+var _queryString2 = _interopRequireDefault(_queryString);
+
 var _lodash = __webpack_require__(1);
 
 var _lodash2 = _interopRequireDefault(_lodash);
@@ -2292,35 +2296,35 @@ var _lodash4 = _interopRequireDefault(_lodash3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var queryString = __webpack_require__(3);
-
-
 var DEFAULT_LOCATION_CHANGE = '@@router/LOCATION_CHANGE';
-function queryMiddleware(_ref) {
-  var _ref$actionName = _ref.actionName,
+function queryMiddleware() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$actionName = _ref.actionName,
       actionName = _ref$actionName === undefined ? DEFAULT_LOCATION_CHANGE : _ref$actionName,
       _ref$actionLocationPa = _ref.actionLocationPath,
       actionLocationPath = _ref$actionLocationPa === undefined ? 'payload.location' : _ref$actionLocationPa;
 
-  return function (next) {
-    return function (action) {
-      switch (action.type) {
-        case actionName:
-          {
-            var newLocation = _extends({}, (0, _lodash2.default)(action, actionLocationPath), {
-              query: queryString.parse((0, _lodash2.default)(action, actionLocationPath + '.search', ''))
-            });
+  return function (store) {
+    return function (next) {
+      return function (action) {
+        switch (action.type) {
+          case actionName:
+            {
+              var newLocation = _extends({}, (0, _lodash2.default)(action, actionLocationPath), {
+                query: _queryString2.default.parse((0, _lodash2.default)(action, actionLocationPath + '.search', ''))
+              });
 
-            var newAction = _extends({}, action);
-            (0, _lodash4.default)(newAction, actionLocationPath, newLocation);
+              var newAction = _extends({}, action);
+              (0, _lodash4.default)(newAction, actionLocationPath, newLocation);
 
-            return next(newAction);
-          }
-        default:
-          {
-            return next(action);
-          }
-      }
+              return next(newAction);
+            }
+          default:
+            {
+              return next(action);
+            }
+        }
+      };
     };
   };
 }
