@@ -1,8 +1,9 @@
 {
   "name": "react-router-query-middleware",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "This middleware adds query object to router reducer when using react-router v4 or higher",
   "main": "build/index.js",
+  "files": [ "build", "README.md" ],
   "peerDependencies": {
     "react": "*"
   },
@@ -11,7 +12,7 @@
     "lodash.set": "^4.3.2",
     "query-string": "^6.0.0",
     "react": "*",
-    "webpack": "^2.6.1"
+    "webpack": "^4.29.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,7 +31,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1"

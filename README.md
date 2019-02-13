@@ -3,9 +3,12 @@
 [![Download Count](http://img.shields.io/npm/dm/react-router-query-middleware.svg?style=flat-square)](https://npmjs.org/package/react-router-query-middleware)
 [![npm version](https://badge.fury.io/js/react-router-query-middleware.svg)](https://badge.fury.io/js/react-router-query-middleware)
 
-The solution on ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
+:white_check_mark: A solution for ***[this](https://github.com/ReactTraining/react-router/issues/4410)***
 
-Adds query object to router reducer when using react-router v4 or higher
+:palm_tree: It adds query object into router reducer when using:
+[React Router v4](https://github.com/ReactTraining/react-router)
+:heavy_plus_sign: [connected-react-router](https://github.com/supasate/connected-react-router)
+
 
 ### Installation
 
@@ -13,9 +16,12 @@ Adds query object to router reducer when using react-router v4 or higher
 $ npm install --save react-router-query-middleware
 ```
 ### Simple usage
-Just add the middleware before configuring the redux store
+Add the middleware *after the routerMiddleware* provided from connected-react-router
+
+* If you still use [react-router-redux](https://github.com/reactjs/react-router-redux) then install v2.0.2
 ```js
 ...
+import { routerMiddleware } from 'connected-react-router';
 import queryMiddleware from 'react-router-query-middleware';
 ...
   const middlewares = [

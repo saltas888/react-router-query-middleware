@@ -1,4 +1,4 @@
-const queryString = require('query-string');
+import queryString from 'query-string';
 import get from 'lodash.get';
 import set from 'lodash.set';
 
@@ -6,8 +6,8 @@ const DEFAULT_LOCATION_CHANGE = '@@router/LOCATION_CHANGE';
 export default function queryMiddleware({
   actionName = DEFAULT_LOCATION_CHANGE,
   actionLocationPath = 'payload.location'
-}) {
-  return next => action => {
+} = {}) {
+  return store => next => action => {
     switch (action.type) {
       case actionName: {
         const newLocation = {
