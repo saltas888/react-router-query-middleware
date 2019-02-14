@@ -37,7 +37,7 @@ applyMiddleware(...middlewares);
 ```
 * If you still use [react-router-redux](https://github.com/reactjs/react-router-redux) then install v2.0.2
 
-### Advance usage
+### Advanced usage
 You can configure *the action name that triggers location change* or *the path of location object in triggered action*
 ```js
 ...
