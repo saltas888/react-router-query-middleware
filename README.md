@@ -18,7 +18,6 @@ $ npm install --save react-router-query-middleware
 ### Simple usage
 Add the middleware *after the routerMiddleware* provided from connected-react-router
 
-* If you still use [react-router-redux](https://github.com/reactjs/react-router-redux) then install v2.0.2
 ```js
 ...
 import { routerMiddleware } from 'connected-react-router';
@@ -26,9 +25,9 @@ import queryMiddleware from 'react-router-query-middleware';
 ...
   const middlewares = [
     ...
-    thunk, // example middleware
-    routerMiddleware(history),// example middleware
-    queryMiddleware,
+    thunk, 
+    routerMiddleware(history),
+    queryMiddleware({}),
     ...
     // Add other middlewares here
   ];
@@ -36,7 +35,9 @@ import queryMiddleware from 'react-router-query-middleware';
 applyMiddleware(...middlewares);
 ...
 ```
-### Advance usage
+* If you use deprecated [react-router-redux](https://github.com/reactjs/react-router-redux) then install v2.0.2
+
+### Advanced usage
 You can configure *the action name that triggers location change* or *the path of location object in triggered action*
 ```js
 ...
