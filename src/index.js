@@ -1,6 +1,7 @@
-import queryString from 'query-string';
-import get from 'lodash.get';
+import queryString from 'querystring';
 import set from 'lodash.set';
+
+const get = (obj, path, defaultValue) => path.split(".").reduce((a, c) => (a && a[c] ? a[c] : (defaultValue || null)), obj)
 
 const DEFAULT_LOCATION_CHANGE = '@@router/LOCATION_CHANGE';
 export default function queryMiddleware({
