@@ -27,7 +27,7 @@ import queryMiddleware from 'react-router-query-middleware';
     ...
     thunk, 
     routerMiddleware(history),
-    queryMiddleware({}),
+    queryMiddleware(),
     ...
     // Add other middlewares here
   ];
