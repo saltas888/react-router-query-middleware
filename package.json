@@ -16,7 +16,7 @@
     "test-watch": "jest --watch",
     "start": "webpack --watch",
     "build": "webpack",
-    "update": "npm run build && npm version minor && npm publish"
+    "update": "npm run build && npm version minor && git add . && git commit -m \"update version\" && git push origin master && npm publish"
   },
   "repository": {
     "type": "git",
