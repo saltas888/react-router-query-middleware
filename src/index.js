@@ -13,7 +13,7 @@ export default function queryMiddleware({
       case actionName: {
         const newLocation = {
           ...get(action, actionLocationPath),
-          query: queryString.parse(get(action, `${actionLocationPath}.search`, '').replace('?', ''))
+          query: queryString.parse((get(action, `${actionLocationPath}.search`) || '').replace('?', ''))
         };
 
         const newAction = { ...action };
