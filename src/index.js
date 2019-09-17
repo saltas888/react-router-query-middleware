@@ -3,7 +3,7 @@ import set from 'lodash.set';
 
 const get = (obj, path, defaultValue) => path.split(".").reduce((a, c) => (a && a[c] ? a[c] : (defaultValue || null)), obj)
 
-const DEFAULT_LOCATION_CHANGE = '@@router/LOCATION_CHANGE';
+export const DEFAULT_LOCATION_CHANGE = '@@router/LOCATION_CHANGE';
 export default function queryMiddleware({
   actionName = DEFAULT_LOCATION_CHANGE,
   actionLocationPath = 'payload.location'
@@ -13,7 +13,7 @@ export default function queryMiddleware({
       case actionName: {
         const newLocation = {
           ...get(action, actionLocationPath),
-          query: queryString.parse(get(action, `${actionLocationPath}.search`, ''))
+          query: queryString.parse(get(action, `${actionLocationPath}.search`, '').replace('?', ''))
         };
 
         const newAction = { ...action };

@@ -12,7 +12,8 @@
     "query-string": "^6.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test-watch": "jest --watch",
     "start": "webpack --watch",
     "build": "webpack",
     "update": "npm run build && npm version patch && npm publish"
@@ -33,6 +34,7 @@
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
+    "jest": "^24.9.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
   }
